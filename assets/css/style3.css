@@ -1,0 +1,33 @@
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.carousel img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.carousel img {
+    animation: grow ease-in-out;
+    animation-timeline: view(inline 50% 30%);
+}

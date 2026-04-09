@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.block {
+    height: 600px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+
+.header, .footer {
+    background: #eee;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.header a, .footer a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: blue;
+}
+
+.footer {
+    position: static;
+    background: #ddd;
+    margin-top: 20px;
+}

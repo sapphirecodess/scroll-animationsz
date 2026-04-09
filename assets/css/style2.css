@@ -1,0 +1,25 @@
+.progressbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: red;
+    transform-origin: left;
+    transform: scaleX(0);   
+}
+
+@keyframes progressbar {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+.progressbar {
+    animation: progressbar 1s linear;
+    animation-timeline: scroll(root);
+}
